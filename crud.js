@@ -49,7 +49,7 @@ app.put('/users/:id',(req,res)=>{
 
 })
 
-//DElete (D)
+//Delete (D)
 app.delete('/users/:id',(req,res)=>{
     const userid=parseInt(req.params.id)
     const userindex=database.findIndex(u=>u.id===userid)
